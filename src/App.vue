@@ -32,6 +32,8 @@ export default {
     const fetchTransactions = async () => {
       loading.value = true;
       try {
+        console.log(import.meta.env.BASE_URL)
+        console.log(process.env.BASE_URL)
         const response = await fetch(import.meta.env.BASE_URL);
         const data = await response.json();
         transactions.value.data = data;
