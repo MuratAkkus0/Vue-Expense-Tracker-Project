@@ -97,7 +97,7 @@ export default {
             'Content-Type': 'application/json',
           },
         };
-        const response = await fetch(`${"https://expense-tracker-vercel-api.vercel.app/data"}${id}`, options);
+        const response = await fetch(`${"https://expense-tracker-vercel-api.vercel.app/data"}/${id}`, options);
         if (response.ok) {
           transactions.value.data = transactions.value.data.filter(
             (transaction) => transaction.id !== id
