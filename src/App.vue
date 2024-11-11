@@ -32,9 +32,7 @@ export default {
     const fetchTransactions = async () => {
       loading.value = true;
       try {
-        console.log(import.meta.env.BASE_URL)
-        console.log(process.env.BASE_URL)
-        const response = await fetch(import.meta.env.BASE_URL);
+        const response = await fetch("https://expense-tracker-vercel-api.vercel.app/data");
         const data = await response.json();
         transactions.value.data = data;
       } catch (error) {
@@ -77,7 +75,7 @@ export default {
           },
           body: JSON.stringify(form),
         };
-        const response = await fetch(import.meta.env.BASE_URL, options);
+        const response = await fetch("https://expense-tracker-vercel-api.vercel.app/data", options);
         const data = await response.json();
         transactions.value.data.push(data);
       } catch (error) {
@@ -99,7 +97,7 @@ export default {
             'Content-Type': 'application/json',
           },
         };
-        const response = await fetch(`${import.meta.env.BASE_URL}${id}`, options);
+        const response = await fetch(`${"https://expense-tracker-vercel-api.vercel.app/data"}${id}`, options);
         if (response.ok) {
           transactions.value.data = transactions.value.data.filter(
             (transaction) => transaction.id !== id
