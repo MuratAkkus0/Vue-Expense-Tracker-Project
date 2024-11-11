@@ -32,7 +32,7 @@ export default {
     const fetchTransactions = async () => {
       loading.value = true;
       try {
-        const response = await fetch('/data');
+        const response = await fetch('https://expense-tracker-vercel-api.vercel.app/data');
         const data = await response.json();
         transactions.value.data = data;
       } catch (error) {

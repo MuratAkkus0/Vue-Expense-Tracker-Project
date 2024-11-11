@@ -10,13 +10,13 @@ export default defineConfig({
   ],
   server: {
     port: 3000,
-    proxy: {
-      '/api': {
-        target: 'https://expense-tracker-vercel-api.vercel.app/',
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, '')
-      }
-    }
+    // proxy: {
+    //   '/api': {
+    //     target: 'https://expense-tracker-vercel-api.vercel.app/',
+    //     changeOrigin: true,
+    //     rewrite: (path) => path.replace(/^\/api/, '')
+    //   }
+    // }
   },
 
   resolve: {
