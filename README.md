@@ -1,31 +1,49 @@
-# vue-expense-tracker
+# Monthly Income & Expense Tracker (Vue.js)
 
-Project Link: https://vue-expense-tracker-project.vercel.app
+This is a **personal income and expense tracking tool that I actively use in my daily life**.  
+It was built with **Vue.js** as my **second project while learning Vue**, focusing on practical and real-world usability.
 
-This template should help get you started developing with Vue 3 in Vite.
+## Educational Purpose
 
-## Recommended IDE Setup
+⚠️ **This project was created for educational purposes only.**  
+It was developed to practice Vue.js fundamentals, state handling, and browser-based persistence using **LocalStorage**.  
+It is **not intended for production use**.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Purpose
 
-## Customize configuration
+The main goal of this project is to provide a simple way to record **monthly income and expenses** and automatically calculate financial balances through a clean and minimal graphical interface.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Features
 
-## Project Setup
+### Income & Expense Management
+- Add monthly income entries
+- Add monthly expense entries
+- Edit and delete existing records
 
-```sh
-npm install
-```
+### Monthly Calculations
+- Automatically calculate total income
+- Automatically calculate total expenses
+- Display the **remaining balance at the end of the month**
 
-### Compile and Hot-Reload for Development
+### Visualization
+- Simple graphical interface to visualize income vs. expenses
+- Clear monthly financial overview
 
-```sh
-npm run dev
-```
+### Data Persistence
+- Stores all data locally using the browser’s **LocalStorage**
+- No backend or external database required
 
-### Compile and Minify for Production
+## Tech Stack
 
-```sh
-npm run build
-```
+- **Vue.js**
+- **JavaScript**
+- **HTML / CSS**
+
+## Disclaimer
+
+This application is a **learning project** and should not be used as a professional financial or accounting system.  
+It does not include data encryption, backups, multi-device synchronization, or advanced security measures.
+
+---
+
+> While primarily built for learning, this tool has proven useful in daily life as a lightweight personal finance tracker.
